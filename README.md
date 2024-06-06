@@ -8,14 +8,13 @@ Before you open the API there are important information you should be aquainted 
 
 
 1. In order to use the API please extract the weather_api folder and place it on your desktop
-1.1. Open the folder and make sure following folders and files are visible:
+1.1. Open the folder and make sure following folders and files are visible (name, type):
 
-Name:       Type:
-icon        (Folder)
-images      (Folder)
-licnese     (.txt file)
-README      (.txt file)
-weather.py  (Python script)
+icon (Folder)
+images (Folder)
+license (.txt file)
+README (.txt file)
+weather.py (Python script)
 
 This is important so the script can read the files
 
