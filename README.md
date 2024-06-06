@@ -10,7 +10,7 @@ With this API you can:
 - Get a weather forecast for the next 6 days
 - Retrieve data about the average temperature during day and nighttime
 
-  Before you open the API there are important information you should be aquainted with
+! Before you open the API there are important information you should be aquainted with !
 
 // Table of content
 1. Install the API
