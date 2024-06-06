@@ -83,6 +83,7 @@ You have to create an API Key on this Website and then replace
 with the numeric API key it got generated on your account.
 
 // 5. Launching the script
+
 You should be able to launch it without the need for an IDLE or any Editor. In case of trouble please feel free to contribute, request a pull or contact me via E-Mail coderorca@outlook.com
 
 This project was done on a free basis and for educational purposes. Please reade the license.txt file for more information about handling and distributing the files.
