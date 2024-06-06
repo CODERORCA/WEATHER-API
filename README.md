@@ -1,5 +1,16 @@
 # WEATHER-API
-Before you open the API there are important information you should be aquainted with
+
+This is a little project trying out to fetch data in form of an API to project a weather forecast using Python tkinter package.
+
+With this API you can:
+
+- Type a location of your choice into the search bar
+- Get current time, the timezone and the exact coordinates of the specified location
+- Get current weather information such as Temperature, Humidity, Pressure, Wind Speed and a Description
+- Get a weather forecast for the next 6 days
+- Retrieve data about the average temperature during day and nighttime
+
+  Before you open the API there are important information you should be aquainted with
 
 // Table of content
 1. Install the API
