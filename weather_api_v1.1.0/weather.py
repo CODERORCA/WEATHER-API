@@ -22,28 +22,28 @@ root.configure(bg = "#EBBC82")
 root.resizable(False, False)
 
 # 3.1 Icon for the window bar
-image_icon = PhotoImage(file = "C:/Users/PC-04/Desktop/weather_api_v1.1.0/images/logo.png")
+image_icon = PhotoImage(file = "Desktop/weather_api_v1.1.0/images/logo.png")
 root.iconphoto(False, image_icon)
 
 # 3.2 Logo
-logo = PhotoImage(file = "C:/Users/PC-04/Desktop/weather_api_v1.1.0/images/logo2.png")
+logo = PhotoImage(file = "Desktop/weather_api_v1.1.0/images/logo2.png")
 logo_icon = Label(image = logo, bg = "#EBBC82")
 logo_icon.place(x = 500, y = 125)
 
 # 4. Search bar
-search_bar = PhotoImage(file = "C:/Users/PC-04/Desktop/weather_api_v1.1.0/images/search_bar.png")
+search_bar = PhotoImage(file = "Desktop/weather_api_v1.1.0/images/search_bar.png")
 searching = Label(image = search_bar, bg = "#EBBC82")
 searching.place(x = 40, y = 40)
 
 # 4.1 Adding a nice deco image
-cloud_image = PhotoImage(file = "C:/Users/PC-04/Desktop/weather_api_v1.1.0/images/clouds.png")
+cloud_image = PhotoImage(file = "Desktop/weather_api_v1.1.0/images/clouds.png")
 clouds = Label(root, image = cloud_image, bg = "#42392F")
 clouds.place(x = 60, y = 47)
 
 # 5. Main Info Box
 # it contains data fetched for the five major points of interests about our weather
 # For reference we use the Acronym thpwd
-main_infobox = PhotoImage(file = "C:/Users/PC-04/Desktop/weather_api_v1.1.0/images/round_rectangle_1.png")
+main_infobox = PhotoImage(file = "Desktop/weather_api_v1.1.0/images/round_rectangle_1.png")
 Label(root, image = main_infobox, bg = "#EBBC82").place(x = 40, y = 140)
 
 # 6. The input
@@ -75,7 +75,7 @@ def getWeather():
     clock.config(text = current_time)
 
     # 7.5 API Key
-    api = "https://api.openweathermap.org/data/3.0/onecall?lat="+str(location.latitude)+"&lon="+str(location.longitude)+"&units=metric&exclude=hourly&appid=2590e5133cbf22730ec0a8c4825b7906"
+    api = "https://api.openweathermap.org/data/3.0/onecall?lat="+str(location.latitude)+"&lon="+str(location.longitude)+"&units=metric&exclude=hourly&appid={API Key}"
 
     # 7.6 Converting fetched data into json format
     json_data = requests.get(api).json()
@@ -101,7 +101,7 @@ def getWeather():
     # first cell
     firstdayimage = json_data['daily'][0]['weather'][0]['icon']
 
-    photo1 = ImageTk.PhotoImage(file = f"C:/Users/PC-04/Desktop/weather_api_v1.1.0/icon/{firstdayimage}.png")
+    photo1 = ImageTk.PhotoImage(file = f"Desktop/weather_api_v1.1.0/icon/{firstdayimage}.png")
     firstimage.config(image = photo1)
     firstimage.image = photo1
     firstimage.place (x = 10, y = 50)
@@ -115,7 +115,7 @@ def getWeather():
     # Cell 2
     seconddayimage = json_data['daily'][1]['weather'][0]['icon']
 
-    img = (Image.open(f"C:/Users/PC-04/Desktop/weather_api_v1.1.0/icon/{seconddayimage}.png"))
+    img = (Image.open(f"Desktop/weather_api_v1.1.0/icon/{seconddayimage}.png"))
 
     resized_image = img.resize((50,50))
     photo2 = ImageTk.PhotoImage(resized_image)
@@ -131,7 +131,7 @@ def getWeather():
     # Cell 3
     thirddayimage = json_data['daily'][2]['weather'][0]['icon']
 
-    img = (Image.open(f"C:/Users/PC-04/Desktop/weather_api_v1.1.0/icon/{thirddayimage}.png"))
+    img = (Image.open(f"Desktop/weather_api_v1.1.0/icon/{thirddayimage}.png"))
     
     resized_image = img.resize((50,50))
     photo3 = ImageTk.PhotoImage(resized_image)
@@ -147,7 +147,7 @@ def getWeather():
     # Cell 4
     fourthdayimage = json_data['daily'][3]['weather'][0]['icon']
 
-    img = (Image.open(f"C:/Users/PC-04/Desktop/weather_api_v1.1.0/icon/{fourthdayimage}.png"))
+    img = (Image.open(f"Desktop/weather_api_v1.1.0/icon/{fourthdayimage}.png"))
     
     resized_image = img.resize((50,50))
     photo4 = ImageTk.PhotoImage(resized_image)
@@ -163,7 +163,7 @@ def getWeather():
     # Cell 5
     fifthdayimage = json_data['daily'][4]['weather'][0]['icon']
 
-    img = (Image.open(f"C:/Users/PC-04/Desktop/weather_api_v1.1.0/icon/{fifthdayimage}.png"))
+    img = (Image.open(f"Desktop/weather_api_v1.1.0/icon/{fifthdayimage}.png"))
     
     resized_image = img.resize((50,50))
     photo5 = ImageTk.PhotoImage(resized_image)
@@ -179,7 +179,7 @@ def getWeather():
     # Cell 6
     sixthdayimage = json_data['daily'][5]['weather'][0]['icon']
 
-    img = (Image.open(f"C:/Users/PC-04/Desktop/weather_api_v1.1.0/icon/{sixthdayimage}.png"))
+    img = (Image.open(f"Desktop/weather_api_v1.1.0/icon/{sixthdayimage}.png"))
     
     resized_image = img.resize((50,50))
     photo6 = ImageTk.PhotoImage(resized_image)
@@ -195,7 +195,7 @@ def getWeather():
     # Cell 7
     seventhdayimage = json_data['daily'][6]['weather'][0]['icon']
 
-    img = (Image.open(f"C:/Users/PC-04/Desktop/weather_api_v1.1.0/icon/{seventhdayimage}.png"))
+    img = (Image.open(f"Desktop/weather_api_v1.1.0/icon/{seventhdayimage}.png"))
     
     resized_image = img.resize((50,50))
     photo7 = ImageTk.PhotoImage(resized_image)
@@ -256,8 +256,8 @@ frame = Frame(root, width = 1400, height = 230, bg = "#42392F")
 frame.pack(side = BOTTOM)
 
 # 10.1 Adding Forecast cells
-firstbox=PhotoImage(file = "C:/Users/PC-04/Desktop/weather_api_v1.1.0/images/round_rectangle_2.png")
-secondbox=PhotoImage(file = "C:/Users/PC-04/Desktop/weather_api_v1.1.0/images/round_rectangle_3.png")
+firstbox=PhotoImage(file = "Desktop/weather_api_v1.1.0/images/round_rectangle_2.png")
+secondbox=PhotoImage(file = "Desktop/weather_api_v1.1.0/images/round_rectangle_3.png")
 
 # 10.2 Adding boxes for each day
 Label(frame, image = firstbox, bg="#42392F").place(x = 40, y = 40)
