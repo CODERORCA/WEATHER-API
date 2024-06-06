@@ -1,6 +1,6 @@
 # WEATHER-API
 
-This is a little project trying out to fetch data in form of an API to project a weather forecast using Python tkinter package.
+This is a little project trying out to fetch data in form of an API to project a weather forecast using Python tkinter package. This API works only on Windows!
 
 With this API you can:
 
@@ -13,13 +13,31 @@ With this API you can:
 ! Before you open the API there are important information you should be aquainted with !
 
 // Table of content
-1. Install the API
-2. Modify the script
-3. API Key
-4. Launching the script
+1. Install pacakages
+2. Install the API
+3. Modify the script
+4. API Key
+5. Launching the script
 
+// Install packages
 
-// 1. Install the API
+If you haven't done that in the past I recommend to check if you have additional packages installed.
+This API requires you to have these packages installed:
+
+- geopy
+- datetime
+- timezonefinder
+- requests
+- pytz
+- pillow
+
+If you don't then don't worry. All you have to do is to Open CMD (Command Prompt) and type in
+
+pip install (package name)
+
+and windows should do the rest
+
+// 2. Install the API
 
 Download the files from my repository and extract them on your Desktop. Once you have done that you should see
 weather_api_1.1.0 on your desktop. Check if the following files are located inside that folder:
@@ -35,7 +53,7 @@ README (.txt file)
 weather.py (Python script)
 
 
-// 2. Modify the API
+// 3. Modify the API
 
 In order to be able to launch the API you have to check the directory file paths inside the script.
 Use a file editor of your choice (VSCode, IntelliJ, Eclipse...)
@@ -49,7 +67,7 @@ You may need to write something like this: C:/Users/"pc name"/ in front of Deskt
 Once done that you can launch it
 
 
-// 3. API Key
+// 4. API Key
 
 Line 78 contains the following syntax:
 
@@ -64,7 +82,7 @@ You have to create an API Key on this Website and then replace
 
 with the numeric API key it got generated on your account.
 
-// 4. Launching the script
+// 5. Launching the script
 You should be able to launch it without the need for an IDLE or any Editor. In case of trouble please feel free to contribute, request a pull or contact me via E-Mail coderorca@outlook.com
 
 This project was done on a free basis and for educational purposes. Please reade the license.txt file for more information about handling and distributing the files.
