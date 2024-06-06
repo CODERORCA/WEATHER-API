@@ -33,7 +33,7 @@ Following lines need to have the directory changed if your copy of the script do
 You will see something like this: "Desktop/weather_api_v1.1.0/images/logo.png"
 
 Since the weather_api folder is on the desktop it may or may not work on first try. In this case modify the filepath accordingly.
-You may need to write something like this: C:/Users/<pc name>/ in front of Desktop/weather_api_v1.1.0/images/logo.png. 
+You may need to write something like this: C:/Users/"pc name"/ in front of Desktop/weather_api_v1.1.0/images/logo.png. 
 
 Once done that you can launch it
 
