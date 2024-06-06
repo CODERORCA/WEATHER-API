@@ -4,6 +4,8 @@
 # But not these files...
 !.gitignore
 !.py
+!.png
+!.txt
 
 # ...even if they are in subdirectories
 !*/
