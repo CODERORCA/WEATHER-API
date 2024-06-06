@@ -34,11 +34,15 @@ Once done that you can launch it
 3. API Key
 Line 78 contains the following syntax 
 api = "https://api.openweathermap.org/data/3.0/onecall?lat="+str(location.latitude)+"&lon="+str(location.longitude)+"&units=metric&exclude=hourly&appid={API Key}"
-This API is fetching data from openweathermap.org for which if you want to make use of the API key, you must register and subscribe
+This API is fetching data from www.openweathermap.org for which if you want to make use of the API key, you must register and subscribe
 Fortunately, the subscription of the One Call 3.0 feature is for free. Please visit www.openweathermap.org and follow the Guide there.
-You have to create an API Key on this Website and then replace {API Key} with the numeric API key it got generated on your account
+You have to create an API Key on this Website and then replace
 
-4. Launching it
+{API Key} 
+
+with the numeric API key it got generated on your account.
+
+5. Launching it
 This script sadly comes with a bug which won't allow you to open it without using the Python IDLE.
 Please run the script using your favorite Editor (Preferably, VSCode or the Mu Editor but other editors should also work fine)
 
