@@ -19,7 +19,7 @@ With this API you can:
 4. API Key
 5. Launching the script
 
-// Install packages
+// 1. Install packages
 
 If you haven't done that in the past I recommend to check if you have additional packages installed.
 This API requires you to have these packages installed:
